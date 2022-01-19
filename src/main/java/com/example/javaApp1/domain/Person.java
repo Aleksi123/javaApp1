@@ -12,6 +12,8 @@ public class Person {
     private String identityNumber;
     @ManyToOne
     private Address address;
+    @OneToOne
+    private PersonInfo personInfo;
 
     public Person() {
     }
@@ -53,5 +55,21 @@ public class Person {
 
     public void setIdentityNumber(String identityNumber) {
         this.identityNumber = identityNumber;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public PersonInfo getPersonInfo() {
+        return personInfo;
+    }
+
+    public void setPersonInfo(PersonInfo personInfo) {
+        this.personInfo = personInfo;
     }
 }
