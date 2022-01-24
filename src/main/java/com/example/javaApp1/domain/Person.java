@@ -18,11 +18,13 @@ public class Person {
     public Person() {
     }
 
-    public Person(long id, String firstName, String lastName, String identityNumber) {
+    public Person(long id, String firstName, String lastName, String identityNumber, Address address, PersonInfo personInfo) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.identityNumber = identityNumber;
+        this.address = address;
+        this.personInfo = personInfo;
     }
 
     public long getId() {
